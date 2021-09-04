@@ -1,16 +1,21 @@
-// Write a C program to find maximum between two numbers.
+//Write a C program to find maximum between two numbers
 #include <stdio.h>
-
-int main() {
-    int numOne, numTwo;
-    printf("Enter The First Number \n");
-    scanf("%d",&numOne);
-    printf("Enter The Second Number \n");
-    scanf("%d",&numTwo);
-    if(numOne>numTwo){
-        printf("%d is greater",numOne);
+int checkGreater(int numOne,int numTwo){
+    if(numOne > numTwo){
+        printf("%d is maximum", numOne);        
+    }else if(numTwo > numOne){
+        printf("%d is maximum", numTwo);
     }else{
-        printf("%d is greater",numTwo);
+        printf("Both are equal");
     }
+}
+int main()
+{
+    int num1, num2;
+    printf("Enter first number please \n ");
+    scanf("%d", &num1);
+    printf("Enter second number please \n ");
+    scanf("%d", &num2);
+    checkGreater(num1,num2);
     return 0;
 }
