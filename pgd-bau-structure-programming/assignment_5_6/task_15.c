@@ -1,3 +1,5 @@
+//Write a C program to input all sides of a triangle and check
+//whether triangle is valid or not
 #include <stdio.h>
 int checkTriangle(int sideOne, int sideTwo, int sideThree){
     if(((sideOne + sideTwo) > sideThree) && ((sideTwo + sideThree) > sideOne) && ((sideOne + sideThree) > sideTwo) ){
